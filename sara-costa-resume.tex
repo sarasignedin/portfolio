@@ -1,27 +1,33 @@
 \documentclass[10pt,letterpaper]{article}
 
-\usepackage[margin=0.52in]{geometry}
+\usepackage[margin=0.65in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
 \usepackage[hidelinks]{hyperref}
 \usepackage{enumitem}
 \usepackage{titlesec}
+\usepackage{xcolor}
+
+\definecolor{accent}{HTML}{1F3A5F}
 
 \setlength{\parindent}{0pt}
-\setlength{\parskip}{0pt}
+\setlength{\parskip}{2.5pt}
 \pagenumbering{gobble}
 
-\titleformat{\section}{\normalsize\bfseries}{}{0em}{}[\vspace{-3pt}\titlerule]
-\titlespacing*{\section}{0pt}{4pt}{2pt}
-\setlist[itemize]{leftmargin=*, itemsep=0pt, topsep=0pt, parsep=0pt, partopsep=0pt}
+\titleformat{\section}{\large\bfseries\color{accent}}{}{0em}{}[\vspace{2pt}{\color{accent!45}\titlerule}]
+\titlespacing*{\section}{0pt}{10pt}{6pt}
+\setlist[itemize]{leftmargin=1.2em, itemsep=2.5pt, topsep=3pt, parsep=1pt, partopsep=0pt}
 
-\newcommand{\ri}[1]{\item \footnotesize{#1}}
+\newcommand{\ri}[1]{\item #1}
 \newcommand{\rs}[4]{
   \textbf{#1} \hfill #2 \\
   \textit{#3} \hfill \textit{#4} \\
-  \vspace{-6pt}
+  \vspace{-2pt}
 }
 
 \begin{document}
-\small
 
 {\Large \textbf{Sara Costa}} \\
 Sarasota, FL \textbar\ \href{mailto:sarasignedin@gmail.com}{sarasignedin@gmail.com} \textbar\ \href{https://www.linkedin.com/in/sara-risotti}{linkedin.com/in/sara-risotti} \textbar\ \href{https://github.com/sarasignedin}{github.com/sarasignedin} \textbar\ \href{https://papaya.kiwi}{papaya.kiwi} \\
@@ -68,7 +74,7 @@ Security consultant with 7+ years of client-facing experience across cloud secur
 
 \rs{US Army Reserves -- Information Technology Specialist (25B), Signal Support Systems Specialist (25U), Human Intelligence Collector (35M)}{July 2021 -- Present}{United States}{Part Time}
 \begin{itemize}
-  \ri{Provide technical support to 50+ personnel in classified and unclassified environments with emphasis on secure communications and operational reliability.}
+  \ri{Provided technical support to 50+ personnel in classified and unclassified environments with emphasis on secure communications and operational reliability.}
   \ri{Manage NIPR/SIPR Cisco switch configuration and maintenance for mission-critical network operations.}
 \end{itemize}
 
@@ -82,7 +88,9 @@ Security consultant with 7+ years of client-facing experience across cloud secur
 \begin{itemize}
   \ri{BSides South Florida 2026 Speaker: \textit{From Prompt to Pipeline: How Dual-Agent Method Automates Cloud Security Remediation}.}
   \ri{Patent-Pending AI System: USPTO Provisional \#64/022,497 (Dual-Agent advisory and remediation method).}
-  \ri{Google Cloud security project work and challenge participation; code and tooling references at \href{https://github.com/sarasignedin}{github.com/sarasignedin}.}
+  \ri{Google SecOps (Chronicle) workshop challenge: investigated a pre-ingested dataset representing a full attack chain against a fictitious organization across 18 challenges, including raw log search, UDM field navigation, script block forensics, lateral movement tracking, and obfuscation analysis.}
+  \ri{Challenge performance: 1,800 points, 121st place, and 16/18 challenges solved within the CTF window.}
+  \ri{Additional cloud security project work and tooling references available at \href{https://github.com/sarasignedin}{github.com/sarasignedin}.}
 \end{itemize}
 
 \section*{Certifications and Education}
