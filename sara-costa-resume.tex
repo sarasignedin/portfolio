@@ -13,7 +13,11 @@
   UprightFont=Quicksand-Variable.ttf,
   BoldFont=Quicksand-Variable.ttf,
   ItalicFont=Quicksand-Variable.ttf,
-  BoldItalicFont=Quicksand-Variable.ttf
+  BoldItalicFont=Quicksand-Variable.ttf,
+  UprightFeatures={RawFeature={+wght=420}},
+  BoldFeatures={RawFeature={+wght=700}},
+  ItalicFeatures={RawFeature={+wght=420}},
+  BoldItalicFeatures={RawFeature={+wght=700}}
 ]{Quicksand}
 
 \definecolor{accent}{HTML}{1F3A5F}
@@ -29,7 +33,7 @@
 \newcommand{\ri}[1]{\item #1}
 \newcommand{\rs}[4]{
   \textbf{#1} \hfill #2 \\
-  \textit{#3} \hfill \textit{#4} \\
+  \textbf{#3} \hfill \textit{#4} \\
   \vspace{-2pt}
 }
 
