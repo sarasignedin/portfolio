@@ -9,15 +9,15 @@
 
 \definecolor{accent}{HTML}{C85A3E}
 \setlength{\parindent}{0pt}
-\setlength{\parskip}{2pt}
+\setlength{\parskip}{4pt}
 \pagenumbering{gobble}
 \titleformat{\section}{\large\bfseries\color{accent}}{}{0em}{}
 \titlespacing*{\section}{0pt}{10pt}{6pt}
-\setlist[itemize]{leftmargin=1.1em, itemsep=0.5pt, topsep=1pt, partopsep=0pt, parsep=0pt}
+\setlist[itemize]{leftmargin=1.1em, itemsep=1pt, topsep=0pt, partopsep=0pt, parsep=0pt}
 
 \newcommand{\entry}[4]{%
   \textbf{#1} \hfill {\small #2} \\
-  {\emph{#3}} \\[-4pt]
+  {\emph{#3}} \\
   #4
 }
 
