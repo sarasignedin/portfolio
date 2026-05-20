@@ -5,6 +5,7 @@
 \usepackage{microtype}
 \usepackage[hidelinks]{hyperref}
 \usepackage{enumitem}
+\usepackage{setspace}
 \usepackage{titlesec}
 \usepackage{xcolor}
 
@@ -25,10 +26,11 @@
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{2.5pt}
 \pagenumbering{gobble}
+\setstretch{1.06}
 
 \titleformat{\section}{\large\bfseries\color{accent}}{}{0em}{}[\vspace{2pt}{\color{accent!45}\titlerule}]
 \titlespacing*{\section}{0pt}{11pt}{6pt}
-\setlist[itemize]{leftmargin=1.2em, itemsep=2.5pt, topsep=1pt, parsep=0pt, partopsep=0pt, before=\vspace{-4pt}, after=\vspace{6pt}}
+\setlist[itemize]{leftmargin=1.2em, itemsep=3pt, topsep=1pt, parsep=0pt, partopsep=0pt, before=\vspace{-2pt}, after=\vspace{7pt}}
 
 \newcommand{\ri}[1]{\item #1}
 \newcommand{\rs}[4]{
@@ -49,12 +51,12 @@ Sarasota, FL \textbar\ Active Secret Clearance \textbar\ \href{mailto:sarasigned
 Security Engineer with 7+ years of experience across cloud security operations, threat detection, vulnerability management, and remediation engineering in AWS, Azure, and GCP environments. Proven record improving security posture through detection tuning, control validation, and infrastructure-as-code remediation. Strong cross-functional communicator with hands-on Python and Terraform automation experience.
 
 \section*{Technical Skills}
-\textbf{Cloud Platforms:} AWS, Azure, GCP, Kubernetes, Docker \\[2pt]
-\textbf{Security \& CNAPP:} Prisma/Cortex Cloud, Wiz, XSOAR, XSIAM, Splunk, Cribl, CSPM, DSPM, CWPP, CIEM, PKI, Computer Forensics \\[2pt]
-\textbf{Detection \& Response:} SIEM triage, alert enrichment, incident-response workflows, control-gap analysis \\[2pt]
-\textbf{IaC \& Automation:} Terraform, Python, Bash \\[2pt]
-\textbf{Programming Languages:} Python, C/C++, C\#, JavaScript, HTML/PHP, SQL \\[2pt]
-\textbf{Data \& Analytics:} MS SQL Server, Oracle, AppDynamics, DataRobot, Quantum Metric, KNIME \\[2pt]
+\textbf{Cloud Platforms:} AWS, Azure, GCP, Kubernetes, Docker \\[3pt]
+\textbf{Security \& CNAPP:} Prisma/Cortex Cloud, Wiz, XSOAR, XSIAM, Splunk, Cribl, CSPM, DSPM, CWPP, CIEM, PKI, Computer Forensics \\[3pt]
+\textbf{Detection \& Response:} SIEM triage, alert enrichment, incident-response workflows, control-gap analysis \\[3pt]
+\textbf{IaC \& Automation:} Terraform, Python, Bash \\[3pt]
+\textbf{Programming Languages:} Python, C/C++, C\#, JavaScript, HTML/PHP, SQL \\[3pt]
+\textbf{Data \& Analytics:} MS SQL Server, Oracle, AppDynamics, DataRobot, Quantum Metric, KNIME \\[3pt]
 \textbf{Protocols \& Systems:} TCP/IP, HTTP, DNS, SMTP, Windows/Linux APIs and system-call familiarity
 
 \section*{Experience}
@@ -67,7 +69,7 @@ Security Engineer with 7+ years of experience across cloud security operations, 
   \ri{Presented at BSides South Florida 2026 (Technical Track): \textit{From Prompt to Pipeline: How Dual-Agent Method Automates Cloud Security Remediation}.}
 \end{itemize}
 
-\rs{Consultant (Private Subcontractor -- Professional Services for PANW)}{Aug 2024 -- Oct 2025}{Palo Alto Networks Services Ecosystem}{Remote, USA}
+\rs{Private Subcontractor -- Professional Services for PANW}{Aug 2024 -- Oct 2025}{Palo Alto Networks Services Ecosystem}{Remote, USA}
 \begin{itemize}
   \ri{Served as primary SME for CSPM and DSPM programs across AWS, Azure, and GCP in 12 enterprise environments, identifying control gaps and remediation priorities.}
   \ri{Analyzed vulnerability findings, authored client-facing risk reports, and delivered corrective-action plans for security and platform teams.}
