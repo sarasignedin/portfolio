@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sara Costa — Cloud Security Consultant</title>
+  <meta name="description" content="Sara Costa is the founder of Papaya Kiwi Consulting LLC — a Florida-based cloud security consultancy specializing in AWS, Azure, GCP, Zero Trust, and AI-driven remediation." />
+  <meta property="og:title" content="Sara Costa — Cloud Security Consultant" />
+  <meta property="og:description" content="Founder of Papaya Kiwi Consulting LLC. Cloud security across AWS, Azure & GCP. Patent-pending dual-agent remediation method. Sarasota, FL · EST." />
+  <meta property="og:image" content="sara-costa.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600;700;800&family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['Quicksand', 'sans-serif'],
+            body: ['Nunito', 'sans-serif'],
+          },
+          colors: {
+            primary: 'hsl(14, 100%, 72%)',
+            accent:  'hsl(330, 100%, 88%)',
+            kiwi:    'hsl(145, 55%, 60%)',
+          },
+        }
+      }
+    }
+  </script>
+
+  <style>
+    *, body { font-family: 'Nunito', sans-serif; }
+    h1, h2, h3, h4, .font-display { font-family: 'Quicksand', sans-serif; }
+
+    .hero-gradient {
+      background: linear-gradient(135deg, hsl(14,100%,68%) 0%, hsl(14,100%,80%) 45%, hsl(330,80%,82%) 100%);
+    }
+    .page-bg {
+      background: linear-gradient(160deg, hsl(35,100%,97%) 0%, #ffffff 50%, hsl(145,60%,97%) 100%);
+    }
+    .badge { display: inline-flex; align-items: center; gap: 5px; }
+
+    /* Timeline track */
+    .timeline-track {
+      position: absolute;
+      left: 1.1rem;
+      top: 0; bottom: 0;
+      width: 2px;
+      background: linear-gradient(to bottom, hsl(14,100%,72%,0.4), hsl(14,100%,72%,0.05));
+      border-radius: 9999px;
+    }
+
+    /* Fade-in animation */
+    .fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.5s ease, transform 0.5s ease; }
+    .fade-in.visible { opacity: 1; transform: translateY(0); }
+
+    @media print {
+      .no-print { display: none !important; }
+      body { background: white !important; }
+    }
+  </style>
+</head>
+<body class="page-bg min-h-screen">
+
+  <!-- ── NAV ── -->
+  <nav class="no-print sticky top-0 z-50 bg-white/80 backdrop-blur border-b border-orange-100 py-3">
+    <div class="max-w-5xl mx-auto px-6 flex items-center justify-between">
+      <a href="https://papaya.kiwi" class="flex items-center gap-2 group">
+        <span class="text-lg font-display font-bold text-primary">🍑 Papaya Kiwi</span>
+      </a>
+      <a href="mailto:hello@papaya.kiwi"
+         class="text-xs font-bold px-4 py-2 rounded-full bg-primary/10 text-primary hover:bg-primary/20 transition-colors">
+        Get in Touch
+      </a>
+    </div>
+  </nav>
+
+  <main class="pt-10 pb-24">
+    <div class="max-w-5xl mx-auto px-6">
+
+      <!-- ── HERO CARD ── -->
+      <div class="fade-in hero-gradient relative rounded-3xl overflow-hidden mb-8 shadow-xl">
+        <!-- Decorative blobs -->
+        <div class="absolute -top-16 -right-16 w-64 h-64 bg-white/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute -bottom-12 -left-12 w-48 h-48 bg-white/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="relative z-10 flex flex-col md:flex-row items-center md:items-end gap-8 px-8 pt-10 pb-8 md:px-12 md:pt-12">
+          <!-- Photo -->
+          <div class="shrink-0">
+            <div class="w-44 h-44 md:w-52 md:h-52 rounded-3xl overflow-hidden border-4 border-white/60 shadow-2xl">
+              <img src="sara-costa.jpg" alt="Sara Costa — Founder, Papaya Kiwi Consulting"
+                   class="w-full h-full object-cover object-top" />
+            </div>
+          </div>
+
+          <!-- Name / title -->
+          <div class="text-center md:text-left">
+            <p class="text-white/70 text-xs font-bold tracking-widest uppercase mb-1">
+              Papaya Kiwi Consulting LLC
+            </p>
+            <h1 class="font-display font-black text-white leading-tight mb-1"
+                style="font-size: clamp(2rem, 5vw, 3rem)">
+              Sara Costa
+            </h1>
+            <p class="text-white/90 font-semibold text-lg mb-4">
+              Founder &amp; Cloud Security Consultant
+            </p>
+            <div class="flex flex-wrap gap-2 justify-center md:justify-start">
+              <span class="badge bg-white/20 text-white text-xs font-bold px-3 py-1 rounded-full">
+                🛡️ Active Secret Clearance
+              </span>
+              <span class="badge bg-white/20 text-white text-xs font-bold px-3 py-1 rounded-full">
+                🌐 EN · PT-BR · DE
+              </span>
+              <span class="badge bg-white/20 text-white text-xs font-bold px-3 py-1 rounded-full">
+                📍 Sarasota, FL · EST
+              </span>
+              <span class="badge bg-white/20 text-white text-xs font-bold px-3 py-1 rounded-full">
+                🔒 TS In Progress
+              </span>
+              <span class="bg-white/20 text-white text-xs font-bold px-3 py-1 rounded-full">
+                🪖 US Army Reserves
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Kiwi-green accent bar -->
+        <div class="flex" style="height:8px">
+          <div style="flex:1;background:hsl(145,60%,65%)"></div><div style="flex:1;background:white"></div>
+          <div style="flex:1;background:hsl(145,60%,65%)"></div><div style="flex:1;background:white"></div>
+          <div style="flex:1;background:hsl(145,60%,65%)"></div><div style="flex:1;background:white"></div>
+          <div style="flex:1;background:hsl(145,60%,65%)"></div><div style="flex:1;background:white"></div>
+          <div style="flex:1;background:hsl(145,60%,65%)"></div><div style="flex:1;background:white"></div>
+          <div style="flex:1;background:hsl(145,60%,65%)"></div><div style="flex:1;background:white"></div>
+          <div style="flex:1;background:hsl(145,60%,65%)"></div><div style="flex:1;background:white"></div>
+          <div style="flex:1;background:hsl(145,60%,65%)"></div><div style="flex:1;background:white"></div>
+          <div style="flex:1;background:hsl(145,60%,65%)"></div><div style="flex:1;background:white"></div>
+          <div style="flex:1;background:hsl(145,60%,65%)"></div><div style="flex:1;background:white"></div>
+        </div>
+      </div>
+
+      <!-- ── CONFERENCE TALK ── -->
+      <div class="fade-in mb-8 rounded-3xl border-2 bg-white/80 shadow-lg overflow-hidden" style="border-color:hsl(14,100%,72%,0.2)">
+        <div class="px-6 py-3 border-b flex items-center gap-2"
+             style="background:linear-gradient(to right,hsl(14,100%,72%,0.1),hsl(330,100%,88%,0.1));border-color:hsl(14,100%,72%,0.1)">
+          <span style="color:hsl(14,100%,72%)">🎤</span>
+          <span class="text-xs font-black tracking-widest uppercase" style="color:hsl(14,100%,72%)">Featured Conference Talk</span>
+          <span class="ml-auto text-xs font-bold px-2.5 py-0.5 rounded-full"
+                style="color:hsl(14,100%,60%);background:hsl(14,100%,72%,0.1)">Technical Track</span>
+        </div>
+        <div class="p-6 md:p-8">
+          <div class="flex flex-wrap items-center gap-3 mb-3 text-xs font-semibold text-gray-400">
+            <span>🕒 Friday, May 8, 2026 · 3:00 PM – 3:40 PM</span>
+            <span>📍 Grand FHJ &nbsp;·&nbsp; BSides South Florida</span>
+          </div>
+          <h2 class="font-display text-xl md:text-2xl font-black text-gray-800 mb-3 leading-snug">
+            From Prompt to Pipeline:
+            <span style="color:hsl(14,100%,65%)"> How Dual-Agent Method Automates Cloud Security Remediation</span>
+          </h2>
+          <p class="text-sm text-gray-500 leading-relaxed mb-4">
+            Most cloud security tools tell you what's wrong. Few tell you what to do — and almost none do it for you.
+            This talk introduces the <strong class="text-gray-700">dual-agent advisory method</strong>, a patent-pending agentic
+            architecture that bridges the gap between security findings and real infrastructure remediation. The system
+            operates through two specialized agents: a plain-language advisory agent that interprets user intent and
+            structures it into a validated JSON handoff schema, and a scanner and execution agent that ingests that
+            schema and acts — running Terraform plan and apply workflows autonomously across AWS, Azure, and GCP.
+          </p>
+          <p class="text-sm text-gray-500 leading-relaxed mb-5">
+            Attendees saw a live demonstration using the open-source
+            <code class="bg-gray-100 px-1.5 py-0.5 rounded text-xs font-mono">pipeline_demos</code> repository,
+            showing how a natural language prompt — <em>"scan this container image and remediate any critical CVEs"</em> —
+            flows from the advisory agent into a structured instruction set, then through Docker container scanning,
+            policy evaluation, and automated infrastructure-as-code remediation.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="text-xs font-bold px-2.5 py-1 rounded-full" style="background:hsl(14,100%,72%,0.1);color:hsl(14,100%,55%)">Dual-Agent Architecture</span>
+            <span class="text-xs font-bold px-2.5 py-1 rounded-full" style="background:hsl(14,100%,72%,0.1);color:hsl(14,100%,55%)">Patent Pending</span>
+            <span class="text-xs font-bold px-2.5 py-1 rounded-full" style="background:hsl(14,100%,72%,0.1);color:hsl(14,100%,55%)">Terraform</span>
+            <span class="text-xs font-bold px-2.5 py-1 rounded-full" style="background:hsl(14,100%,72%,0.1);color:hsl(14,100%,55%)">Docker</span>
+            <span class="text-xs font-bold px-2.5 py-1 rounded-full" style="background:hsl(14,100%,72%,0.1);color:hsl(14,100%,55%)">CI/CD</span>
+            <span class="text-xs font-bold px-2.5 py-1 rounded-full" style="background:hsl(14,100%,72%,0.1);color:hsl(14,100%,55%)">AWS · Azure · GCP</span>
+            <span class="text-xs font-bold px-2.5 py-1 rounded-full" style="background:hsl(14,100%,72%,0.1);color:hsl(14,100%,55%)">Agentic AI</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── BIO + SIDEBAR ── -->
+      <div class="fade-in grid md:grid-cols-3 gap-6 mb-8">
+        <!-- Bio -->
+        <div class="md:col-span-2 bg-white/80 rounded-3xl border border-white shadow-md p-7">
+          <h3 class="font-display text-lg font-black text-gray-800 mb-4 flex items-center gap-2">
+            ⭐ About Sara
+          </h3>
+          <div class="space-y-4 text-sm text-gray-500 leading-relaxed">
+            <p>
+              Sara Costa is the founder and principal cloud security consultant at Papaya Kiwi Consulting LLC.
+              With over seven years of hands-on experience across <strong class="text-gray-700">AWS, Azure, and GCP</strong>,
+              Sara has built her career at the intersection of deep technical expertise and clear communication —
+              making complex cloud security concepts understandable for everyone from engineers to executives.
+            </p>
+            <p>
+              Before founding Papaya Kiwi, Sara served as a primary SME for cloud posture management and data security
+              posture at Palo Alto Networks, guiding enterprise customers through Prisma Cloud adoption. Her consultancy
+              career spans Germany with BxC Security, where she delivered corporate PKI architecture and enterprise
+              security governance, and IoT software development at BENTELER Group in Paderborn.
+            </p>
+            <p>
+              A proud Brazilian-born <strong class="text-gray-700">trilingual (English, Portuguese, German)</strong>, Sara brings
+              a global perspective to every engagement. She holds an active <strong class="text-gray-700">Secret clearance</strong> with
+              a Top Secret investigation in progress, and actively serves in the <strong class="text-gray-700">US Army Reserves</strong> as
+              a 25/35 Series MOS specialist in classified and unclassified technical environments.
+            </p>
+            <p>
+              Sara holds an <strong class="text-gray-700">M.S. in Computer and Information Systems Security</strong> from the
+              University of Maryland Global Campus. Her patent-pending dual-agent remediation method — showcased at
+              BSides South Florida in May 2026 — is the foundation of Papaya Kiwi's agentic cloud security approach.
+            </p>
+          </div>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="flex flex-col gap-4">
+          <div class="bg-white/80 rounded-3xl border border-white shadow-md p-6">
+            <h4 class="text-xs font-black tracking-widest uppercase mb-4" style="color:hsl(14,100%,65%,0.8)">Education</h4>
+            <div class="space-y-4">
+              <div class="border-l-2 pl-3" style="border-color:hsl(14,100%,72%,0.3)">
+                <p class="text-xs font-bold text-gray-700">UMD Global Campus</p>
+                <p class="text-xs text-gray-400 leading-tight">M.S. Computer &amp; Information Systems Security</p>
+                <p class="text-xs text-gray-300 mt-0.5">2023–2024</p>
+              </div>
+              <div class="border-l-2 pl-3" style="border-color:hsl(14,100%,72%,0.3)">
+                <p class="text-xs font-bold text-gray-700">LSU Shreveport</p>
+                <p class="text-xs text-gray-400 leading-tight">B.S. Computer &amp; Information Systems Security</p>
+                <p class="text-xs text-gray-300 mt-0.5">2017–2019</p>
+              </div>
+              <div class="border-l-2 pl-3" style="border-color:hsl(14,100%,72%,0.3)">
+                <p class="text-xs font-bold text-gray-700">SUNY Westchester CC</p>
+                <p class="text-xs text-gray-400 leading-tight">A.S. Cyber Security</p>
+                <p class="text-xs text-gray-300 mt-0.5">2015–2017</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white/80 rounded-3xl border border-white shadow-md p-6">
+            <h4 class="text-xs font-black tracking-widest uppercase mb-3" style="color:hsl(14,100%,65%,0.8)">Certifications &amp; Clearances</h4>
+            <div class="space-y-2.5">
+              <div class="flex items-center gap-2 text-xs font-semibold text-gray-700">🏅 CompTIA Security+ ce</div>
+              <div class="flex items-center gap-2 text-xs font-semibold text-gray-700">🔐 Active Secret Clearance</div>
+              <div class="flex items-center gap-2 text-xs font-semibold text-gray-700">🔒 TS Investigation In Progress</div>
+              <div class="flex items-center gap-2 text-xs font-semibold text-gray-700">⚖️ Patent Pending · USPTO #64/022,497</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── SKILLS ── -->
+      <div class="fade-in mb-8 bg-white/80 rounded-3xl border border-white shadow-md p-7">
+        <h3 class="font-display text-lg font-black text-gray-800 mb-4 flex items-center gap-2">
+          🏆 Technical Expertise
+        </h3>
+        <div class="flex flex-wrap gap-2.5">
+          <span class="flex items-center gap-1.5 text-xs font-bold px-3 py-1.5 rounded-full border"
+                style="background:linear-gradient(135deg,hsl(14,100%,72%,0.06),hsl(330,100%,88%,0.1));border-color:hsl(14,100%,72%,0.15);color:#374151">
+            ☁️ Cloud Posture Management
+          </span>
+          <span class="flex items-center gap-1.5 text-xs font-bold px-3 py-1.5 rounded-full border"
+                style="background:linear-gradient(135deg,hsl(14,100%,72%,0.06),hsl(330,100%,88%,0.1));border-color:hsl(14,100%,72%,0.15);color:#374151">
+            🔒 Data Security Posture (DSPM)
+          </span>
+          <span class="flex items-center gap-1.5 text-xs font-bold px-3 py-1.5 rounded-full border"
+                style="background:linear-gradient(135deg,hsl(14,100%,72%,0.06),hsl(330,100%,88%,0.1));border-color:hsl(14,100%,72%,0.15);color:#374151">
+            🛡️ Workload Protection
+          </span>
+          <span class="flex items-center gap-1.5 text-xs font-bold px-3 py-1.5 rounded-full border"
+                style="background:linear-gradient(135deg,hsl(14,100%,72%,0.06),hsl(330,100%,88%,0.1));border-color:hsl(14,100%,72%,0.15);color:#374151">
+            🔑 Identity Entitlements
+          </span>
+          <span class="flex items-center gap-1.5 text-xs font-bold px-3 py-1.5 rounded-full border"
+                style="background:linear-gradient(135deg,hsl(14,100%,72%,0.06),hsl(330,100%,88%,0.1));border-color:hsl(14,100%,72%,0.15);color:#374151">
+            🌀 Prisma / Cortex Cloud
+          </span>
+          <span class="flex items-center gap-1.5 text-xs font-bold px-3 py-1.5 rounded-full border"
+                style="background:linear-gradient(135deg,hsl(14,100%,72%,0.06),hsl(330,100%,88%,0.1));border-color:hsl(14,100%,72%,0.15);color:#374151">
+            🌐 AWS · Azure · GCP
+          </span>
+          <span class="flex items-center gap-1.5 text-xs font-bold px-3 py-1.5 rounded-full border"
+                style="background:linear-gradient(135deg,hsl(14,100%,72%,0.06),hsl(330,100%,88%,0.1));border-color:hsl(14,100%,72%,0.15);color:#374151">
+            🐳 Kubernetes &amp; Docker
+          </span>
+          <span class="flex items-center gap-1.5 text-xs font-bold px-3 py-1.5 rounded-full border"
+                style="background:linear-gradient(135deg,hsl(14,100%,72%,0.06),hsl(330,100%,88%,0.1));border-color:hsl(14,100%,72%,0.15);color:#374151">
+            ⚡ Terraform &amp; Python
+          </span>
+          <span class="flex items-center gap-1.5 text-xs font-bold px-3 py-1.5 rounded-full border"
+                style="background:linear-gradient(135deg,hsl(14,100%,72%,0.06),hsl(330,100%,88%,0.1));border-color:hsl(14,100%,72%,0.15);color:#374151">
+            📊 Splunk / SIEM
+          </span>
+          <span class="flex items-center gap-1.5 text-xs font-bold px-3 py-1.5 rounded-full border"
+                style="background:linear-gradient(135deg,hsl(14,100%,72%,0.06),hsl(330,100%,88%,0.1));border-color:hsl(14,100%,72%,0.15);color:#374151">
+            🏅 CompTIA Security+
+          </span>
+          <!-- Secondary chips -->
+          <span class="text-xs font-semibold px-3 py-1.5 rounded-full border bg-gray-50 text-gray-400 border-gray-100">Wiz</span>
+          <span class="text-xs font-semibold px-3 py-1.5 rounded-full border bg-gray-50 text-gray-400 border-gray-100">Cribl</span>
+          <span class="text-xs font-semibold px-3 py-1.5 rounded-full border bg-gray-50 text-gray-400 border-gray-100">XSOAR</span>
+          <span class="text-xs font-semibold px-3 py-1.5 rounded-full border bg-gray-50 text-gray-400 border-gray-100">XSIAM</span>
+          <span class="text-xs font-semibold px-3 py-1.5 rounded-full border bg-gray-50 text-gray-400 border-gray-100">AppDynamics</span>
+          <span class="text-xs font-semibold px-3 py-1.5 rounded-full border bg-gray-50 text-gray-400 border-gray-100">Computer Forensics</span>
+          <span class="text-xs font-semibold px-3 py-1.5 rounded-full border bg-gray-50 text-gray-400 border-gray-100">PKI</span>
+        </div>
+      </div>
+
+      <!-- ── EXPERIENCE TIMELINE ── -->
+      <div class="fade-in mb-12">
+        <h3 class="font-display text-lg font-black text-gray-800 mb-6 flex items-center gap-2">
+          💼 Experience
+        </h3>
+        <div class="relative">
+          <div class="timeline-track"></div>
+          <div class="flex flex-col gap-6">
+
+            <!-- 01 -->
+            <div class="flex gap-5">
+              <div class="relative z-10 shrink-0 mt-1">
+                <div class="w-9 h-9 rounded-full flex items-center justify-center shadow-md border-2 border-white text-white text-xs font-black"
+                     style="background:hsl(14,100%,72%)">01</div>
+              </div>
+              <div class="flex-1 rounded-2xl border p-5 shadow-sm" style="background:#fff7ed;border-color:#fed7aa">
+                <div class="flex flex-wrap items-start gap-2 mb-1">
+                  <h4 class="font-display font-black text-sm text-gray-800 flex-1">Papaya Kiwi Consulting LLC</h4>
+                  <span class="text-xs font-bold text-gray-400 whitespace-nowrap">Nov 2025 – Present</span>
+                </div>
+                <p class="text-xs font-bold mb-2" style="color:hsl(14,100%,62%)">Founder &amp; Cloud Security Consultant · Remote, USA</p>
+                <ul class="space-y-1">
+                  <li class="text-xs text-gray-500 leading-relaxed flex items-start gap-1.5"><span style="color:hsl(14,100%,65%)" class="mt-0.5 shrink-0">›</span> Cloud security engineering engagements focused on Kubernetes, Docker, and infrastructure automation</li>
+                  <li class="text-xs text-gray-500 leading-relaxed flex items-start gap-1.5"><span style="color:hsl(14,100%,65%)" class="mt-0.5 shrink-0">›</span> Designing educational labs and technical content to simplify complex security concepts</li>
+                  <li class="text-xs text-gray-500 leading-relaxed flex items-start gap-1.5"><span style="color:hsl(14,100%,65%)" class="mt-0.5 shrink-0">›</span> Bridging the gap between engineering teams and business stakeholders</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- 02 -->
+            <div class="flex gap-5">
+              <div class="relative z-10 shrink-0 mt-1">
+                <div class="w-9 h-9 rounded-full flex items-center justify-center shadow-md border-2 border-white text-white text-xs font-black"
+                     style="background:hsl(330,80%,75%)">02</div>
+              </div>
+              <div class="flex-1 rounded-2xl border p-5 shadow-sm" style="background:#fdf2f8;border-color:#fbcfe8">
+                <div class="flex flex-wrap items-start gap-2 mb-1">
+                  <h4 class="font-display font-black text-sm text-gray-800 flex-1">Private Subcontractor — Professional Services for PANW</h4>
+                  <span class="text-xs font-bold text-gray-400 whitespace-nowrap">Aug 2024 – Oct 2025</span>
+                </div>
+                <p class="text-xs font-bold mb-2" style="color:hsl(14,100%,62%)">Cloud Security Consultant · Remote, USA</p>
+                <ul class="space-y-1">
+                  <li class="text-xs text-gray-500 leading-relaxed flex items-start gap-1.5"><span style="color:hsl(14,100%,65%)" class="mt-0.5 shrink-0">›</span> Primary SME for cloud posture management and data security posture across Prisma Cloud (AWS, Azure, GCP)</li>
+                  <li class="text-xs text-gray-500 leading-relaxed flex items-start gap-1.5"><span style="color:hsl(14,100%,65%)" class="mt-0.5 shrink-0">›</span> Designed a D&amp;D-style Tabletop Exercise for Prisma Cloud, gamifying security training for technical teams</li>
+                  <li class="text-xs text-gray-500 leading-relaxed flex items-start gap-1.5"><span style="color:hsl(14,100%,65%)" class="mt-0.5 shrink-0">›</span> Configured alert integrations with Splunk; automated workflows using Python and Terraform</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- 03 -->
+            <div class="flex gap-5">
+              <div class="relative z-10 shrink-0 mt-1">
+                <div class="w-9 h-9 rounded-full flex items-center justify-center shadow-md border-2 border-white text-white text-xs font-black"
+                     style="background:#60a5fa">03</div>
+              </div>
+              <div class="flex-1 rounded-2xl border p-5 shadow-sm" style="background:#eff6ff;border-color:#bfdbfe">
+                <div class="flex flex-wrap items-start gap-2 mb-1">
+                  <h4 class="font-display font-black text-sm text-gray-800 flex-1">BxC Security</h4>
+                  <span class="text-xs font-bold text-gray-400 whitespace-nowrap">Sept 2022 – Feb 2024</span>
+                </div>
+                <p class="text-xs font-bold mb-2" style="color:hsl(14,100%,62%)">Security Consultant · Germany</p>
+                <ul class="space-y-1">
+                  <li class="text-xs text-gray-500 leading-relaxed flex items-start gap-1.5"><span style="color:hsl(14,100%,65%)" class="mt-0.5 shrink-0">›</span> Continuous threat identification across AWS and Azure with Prisma Cloud for enterprise clients</li>
+                  <li class="text-xs text-gray-500 leading-relaxed flex items-start gap-1.5"><span style="color:hsl(14,100%,65%)" class="mt-0.5 shrink-0">›</span> Vulnerability gap analysis for privileged access management (PAM) policies</li>
+                  <li class="text-xs text-gray-500 leading-relaxed flex items-start gap-1.5"><span style="color:hsl(14,100%,65%)" class="mt-0.5 shrink-0">›</span> Designed and implemented corporate PKI architecture; authored IT/OT-bridging technical documentation</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- 04 -->
+            <div class="flex gap-5">
+              <div class="relative z-10 shrink-0 mt-1">
+                <div class="w-9 h-9 rounded-full flex items-center justify-center shadow-md border-2 border-white text-white text-xs font-black"
+                     style="background:hsl(145,55%,55%)">04</div>
+              </div>
+              <div class="flex-1 rounded-2xl border p-5 shadow-sm" style="background:#f0fdf4;border-color:#bbf7d0">
+                <div class="flex flex-wrap items-start gap-2 mb-1">
+                  <h4 class="font-display font-black text-sm text-gray-800 flex-1">US Army Reserves</h4>
+                  <span class="text-xs font-bold text-gray-400 whitespace-nowrap">July 2021 – Present</span>
+                </div>
+                <p class="text-xs font-bold mb-2" style="color:hsl(14,100%,62%)">25/35 Series MOS (25B / 25U / 35M) · United States</p>
+                <ul class="space-y-1">
+                  <li class="text-xs text-gray-500 leading-relaxed flex items-start gap-1.5"><span style="color:hsl(14,100%,65%)" class="mt-0.5 shrink-0">›</span> Technical support for 50+ personnel in classified and unclassified environments</li>
+                  <li class="text-xs text-gray-500 leading-relaxed flex items-start gap-1.5"><span style="color:hsl(14,100%,65%)" class="mt-0.5 shrink-0">›</span> Configuration and maintenance of NIPR Cisco switches for secure communications infrastructure</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- 05 -->
+            <div class="flex gap-5">
+              <div class="relative z-10 shrink-0 mt-1">
+                <div class="w-9 h-9 rounded-full flex items-center justify-center shadow-md border-2 border-white text-white text-xs font-black"
+                     style="background:#a78bfa">05</div>
+              </div>
+              <div class="flex-1 rounded-2xl border p-5 shadow-sm" style="background:#faf5ff;border-color:#e9d5ff">
+                <div class="flex flex-wrap items-start gap-2 mb-1">
+                  <h4 class="font-display font-black text-sm text-gray-800 flex-1">BENTELER Group</h4>
+                  <span class="text-xs font-bold text-gray-400 whitespace-nowrap">Mar 2019 – June 2020</span>
+                </div>
+                <p class="text-xs font-bold mb-2" style="color:hsl(14,100%,62%)">Software Developer / Data Scientist · Paderborn, Germany</p>
+                <ul class="space-y-1">
+                  <li class="text-xs text-gray-500 leading-relaxed flex items-start gap-1.5"><span style="color:hsl(14,100%,65%)" class="mt-0.5 shrink-0">›</span> Developed IoT software solutions using MS SQL Server and Oracle databases</li>
+                  <li class="text-xs text-gray-500 leading-relaxed flex items-start gap-1.5"><span style="color:hsl(14,100%,65%)" class="mt-0.5 shrink-0">›</span> Built KPI dashboards and metrics using KNIME, Python, and Java; full-cycle software development in C/C++, C#, JavaScript</li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- ── CTA ── -->
+      <div class="fade-in text-center p-10 bg-white/60 rounded-3xl border border-white shadow-md">
+        <div class="text-4xl mb-3">🤝</div>
+        <h3 class="font-display text-2xl font-black text-gray-800 mb-2">Work with Sara</h3>
+        <p class="text-gray-400 font-medium mb-6 max-w-md mx-auto text-sm">
+          Whether you need a cloud security assessment, identity architecture review, or a custom training program —
+          Sara brings deep technical expertise and a knack for making it all make sense.
+        </p>
+        <a href="mailto:hello@papaya.kiwi"
+           class="inline-block text-white font-bold rounded-full px-8 py-3 shadow-lg transition-all hover:opacity-90"
+           style="background:linear-gradient(to right,hsl(14,100%,72%),hsl(330,100%,88%))">
+          Get in Touch
+        </a>
+        <p class="mt-4 text-xs text-gray-300">hello@papaya.kiwi · <a href="https://papaya.kiwi" class="hover:text-gray-400 transition-colors">papaya.kiwi</a></p>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ── FOOTER ── -->
+  <footer class="mt-16 border-t border-gray-100 py-8 text-center">
+    <p class="text-xs text-gray-300">
+      © 2026 Papaya Kiwi Consulting LLC · Sarasota, FL ·
+      <a href="https://papaya.kiwi" class="hover:text-gray-400 transition-colors">papaya.kiwi</a>
+    </p>
+  </footer>
+
+  <!-- Scroll-triggered fade-in -->
+  <script>
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); } });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>
