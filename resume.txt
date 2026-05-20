@@ -1,0 +1,27 @@
+Sara Costa
+Cloud Security Consultant
+
+Email: sara.costa.fl@gmail.com
+Website: https://papaya.kiwi
+Location: Florida, USA (EST)
+
+Summary
+Founder of Papaya Kiwi Consulting LLC with 7+ years of cloud security experience across AWS, Azure, and GCP.
+
+Experience
+- Papaya Kiwi Consulting LLC (Nov 2025 - Present): Founder & Cloud Security Consultant
+- Private Subcontractor for PANW (Aug 2024 - Oct 2025): Cloud Security Consultant
+- BxC Security (Sept 2022 - Feb 2024): Security Consultant
+- US Army Reserves (July 2021 - Present): 25/35 Series MOS Specialist
+- BENTELER Group (Mar 2019 - June 2020): Software Developer / Data Scientist
+
+Education
+- M.S. Computer & Information Systems Security, UMGC (2023-2024)
+- B.S. Computer & Information Systems Security, LSU Shreveport (2017-2019)
+- A.S. Cyber Security, SUNY Westchester CC (2015-2017)
+
+Certifications
+- CompTIA Security+ ce
+
+Speaking
+- BSides South Florida (May 8, 2026): From Prompt to Pipeline
