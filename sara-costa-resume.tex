@@ -1,14 +1,20 @@
 \documentclass[10pt,letterpaper]{article}
 
 \usepackage[margin=0.65in]{geometry}
-\usepackage[T1]{fontenc}
-\usepackage[utf8]{inputenc}
-\usepackage{lmodern}
+\usepackage{fontspec}
 \usepackage{microtype}
 \usepackage[hidelinks]{hyperref}
 \usepackage{enumitem}
 \usepackage{titlesec}
 \usepackage{xcolor}
+
+\setmainfont[
+  Path=fonts/,
+  UprightFont=Quicksand-Variable.ttf,
+  BoldFont=Quicksand-Variable.ttf,
+  ItalicFont=Quicksand-Variable.ttf,
+  BoldItalicFont=Quicksand-Variable.ttf
+]{Quicksand}
 
 \definecolor{accent}{HTML}{1F3A5F}
 
