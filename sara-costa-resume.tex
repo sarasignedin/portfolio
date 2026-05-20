@@ -1,90 +1,94 @@
-\documentclass[11pt]{article}
-\usepackage[margin=0.7in]{geometry}
-\usepackage[T1]{fontenc}
-\usepackage[utf8]{inputenc}
+\documentclass[10pt,letterpaper]{article}
+
+\usepackage[margin=0.52in]{geometry}
 \usepackage[hidelinks]{hyperref}
 \usepackage{enumitem}
 \usepackage{titlesec}
-\usepackage{xcolor}
 
-\definecolor{accent}{HTML}{C85A3E}
 \setlength{\parindent}{0pt}
-\setlength{\parskip}{4pt}
+\setlength{\parskip}{0pt}
 \pagenumbering{gobble}
-\titleformat{\section}{\large\bfseries\color{accent}}{}{0em}{}
-\titlespacing*{\section}{0pt}{10pt}{6pt}
-\setlist[itemize]{leftmargin=1.1em, itemsep=1pt, topsep=0pt, partopsep=0pt, parsep=0pt}
 
-\newcommand{\entry}[4]{%
-  \textbf{#1} \hfill {\small #2} \\
-  {\emph{#3}}\\[-2pt]
-  {\setlength{\parskip}{0pt}#4}
+\titleformat{\section}{\normalsize\bfseries}{}{0em}{}[\vspace{-3pt}\titlerule]
+\titlespacing*{\section}{0pt}{4pt}{2pt}
+\setlist[itemize]{leftmargin=*, itemsep=0pt, topsep=0pt, parsep=0pt, partopsep=0pt}
+
+\newcommand{\ri}[1]{\item \footnotesize{#1}}
+\newcommand{\rs}[4]{
+  \textbf{#1} \hfill #2 \\
+  \textit{#3} \hfill \textit{#4} \\
+  \vspace{-6pt}
 }
 
 \begin{document}
+\small
 
-{\LARGE \textbf{Sara Costa}} \\
-{\large Founder \& Cloud Security Consultant} \\
-Florida, USA (EST) \textbar\ \href{mailto:sara.costa.fl@gmail.com}{sara.costa.fl@gmail.com} \textbar\ \\
-\href{https://www.linkedin.com/in/sara-costa-fl/}{linkedin.com/in/sara-costa-fl} \textbar\ \href{https://github.com/sarasignedin}{github.com/sarasignedin}
+{\Large \textbf{Sara Costa}} \\
+Sarasota, FL \textbar\ \href{mailto:sarasignedin@gmail.com}{sarasignedin@gmail.com} \textbar\ \href{https://www.linkedin.com/in/sara-risotti}{linkedin.com/in/sara-risotti} \textbar\ \href{https://github.com/sarasignedin}{github.com/sarasignedin} \textbar\ \href{https://papaya.kiwi}{papaya.kiwi} \\
+Active Secret Clearance
 
-\section*{Professional Summary}
-Cloud security consultant with 7+ years of experience across AWS, Azure, and GCP. Founder of Papaya Kiwi Consulting LLC, focused on practical remediation, infrastructure-as-code, and security enablement. Active Secret clearance with service in the U.S. Army Reserves.
+\section*{Target Role}
+Security Engineer, Offensive Security
+
+\section*{Summary}
+Security consultant with 7+ years of client-facing experience across cloud security, vulnerability analysis, and remediation engineering in AWS, Azure, and GCP environments. Proven record delivering enterprise assessments, translating technical findings for non-technical stakeholders, and driving remediation plans aligned to business priorities. Patent-pending inventor and BSides speaker with hands-on Python and Terraform automation experience.
+
+\section*{Technical Skills}
+\textbf{Cloud Platforms:} AWS, Azure, GCP, Kubernetes, Docker \\
+\textbf{Security \& CNAPP:} Prisma/Cortex Cloud, Wiz, XSOAR, XSIAM, Splunk, Cribl, CSPM, DSPM, CWPP, CIEM, PKI, Computer Forensics \\
+\textbf{IaC \& Automation:} Terraform, Python, Bash \\
+\textbf{Programming Languages:} Python, C/C++, C\#, JavaScript, HTML/PHP, SQL \\
+\textbf{Data \& Analytics:} MS SQL Server, Oracle, AppDynamics, DataRobot, Quantum Metric, KNIME \\
+\textbf{Protocols \& Systems:} TCP/IP, HTTP, DNS, SMTP, Windows/Linux APIs and system-call familiarity
 
 \section*{Experience}
-\entry{Papaya Kiwi Consulting LLC}{Nov 2025 -- Present}{Founder \& Cloud Security Consultant}{
+
+\rs{Founder \& Cloud Security Consultant}{Nov 2025 -- Present}{Papaya Kiwi Consulting LLC}{Remote, USA}
 \begin{itemize}
-  \item Lead cloud security engagements covering Kubernetes, container hardening, and remediation automation.
-  \item Design technical learning labs and practical security content for engineering teams.
-  \item Bridge security and business stakeholders through clear, implementation-ready guidance.
-\end{itemize}}
+  \ri{Lead security engineering engagements across 2 major cloud runtime surfaces (Kubernetes and Docker) and approximately 10+ client environments, focused on risk identification, hardening, and remediation execution.}
+  \ri{Built prompt-to-pipeline remediation workflows that can reduce manual remediation steps by up to 40\% when automated security control fixes are approved for apply.}
+  \ri{Filed USPTO Provisional Patent \#64/022,497 for a dual-agent advisory method that converts natural-language remediation intent into structured execution workflows.}
+  \ri{Presented at BSides South Florida 2026 (Technical Track): \textit{From Prompt to Pipeline: How Dual-Agent Method Automates Cloud Security Remediation}.}
+\end{itemize}
 
-\entry{Private Subcontractor (Professional Services for PANW)}{Aug 2024 -- Oct 2025}{Cloud Security Consultant}{
+\rs{Consultant (Private Subcontractor -- Professional Services for PANW)}{Aug 2024 -- Oct 2025}{Palo Alto Networks Services Ecosystem}{Remote, USA}
 \begin{itemize}
-  \item Primary SME for cloud posture and data security posture in Prisma Cloud across AWS, Azure, and GCP.
-  \item Automated alerting and remediation workflows using Terraform and Python.
-  \item Designed security tabletop exercises to improve cloud incident response maturity.
-\end{itemize}}
+  \ri{Served as primary SME for CSPM and DSPM programs spanning 3 major clouds (AWS, Azure, GCP) across approximately 12 enterprise environments, identifying control gaps and remediation priorities.}
+  \ri{Analyzed vulnerability findings, authored client-facing reports, and delivered stakeholder debriefs focused on risk, impact, and corrective actions.}
+  \ri{Integrated Prisma Cloud findings into Splunk to improve vulnerability visibility, triage workflows, and incident-response context.}
+  \ri{Automated remediation-oriented workflows with Python and Terraform, reducing manual remediation steps by approximately 40\% and improving response consistency.}
+\end{itemize}
 
-\entry{BxC Security}{Sept 2022 -- Feb 2024}{Security Consultant}{
+\rs{Security Consultant}{Sept 2022 -- Feb 2024}{BxC Security}{Germany}
 \begin{itemize}
-  \item Delivered cloud threat identification and remediation programs for enterprise environments.
-  \item Conducted PAM-related vulnerability gap assessments and authored executive technical documentation.
-  \item Designed and implemented corporate PKI architecture.
-\end{itemize}}
+  \ri{Conducted security posture and vulnerability gap analysis across 2 enterprise cloud platforms (AWS and Azure) for approximately 8 client assessments, producing prioritized remediation roadmaps.}
+  \ri{Assessed privileged access management controls and documented risk-treatment plans for enterprise stakeholders.}
+  \ri{Designed corporate PKI architecture and authored technical documentation to support secure operational processes.}
+\end{itemize}
 
-\entry{US Army Reserves}{Jul 2021 -- Present}{25/35 Series MOS Specialist}{
+\rs{US Army Reserves -- Information Technology Specialist (25B), Signal Support Systems Specialist (25U), Human Intelligence Collector (35M)}{July 2021 -- Present}{United States}{Part Time}
 \begin{itemize}
-  \item Provided technical support in classified and unclassified environments.
-  \item Configured and maintained secure communications and NIPR network infrastructure.
-\end{itemize}}
+  \ri{Provide technical support to 50+ personnel in classified and unclassified environments with emphasis on secure communications and operational reliability.}
+  \ri{Manage NIPR/SIPR Cisco switch configuration and maintenance for mission-critical network operations.}
+\end{itemize}
 
-\entry{BENTELER Group}{Mar 2019 -- Jun 2020}{Software Developer / Data Scientist}{
+\rs{Software Developer / Data Scientist}{Mar 2019 -- June 2020}{BENTELER Group}{Paderborn, Germany}
 \begin{itemize}
-  \item Developed IoT and analytics workflows using SQL, Python, Java, and KNIME.
-  \item Built KPI dashboards and supported full-cycle software delivery in manufacturing operations.
-\end{itemize}}
+  \ri{Built IoT software and KPI dashboards using Python, SQL, and Oracle across 2 enterprise database platforms (MS SQL Server and Oracle), tracking 15+ operational KPIs.}
+  \ri{Contributed across planning, development, and testing with C/C++, C\#, and JavaScript in production systems.}
+\end{itemize}
 
-\section*{Education}
-\textbf{University of Maryland Global Campus} \hfill {\small 2023 -- 2024} \\
-M.S., Computer and Information Systems Security
+\section*{Speaking \& Projects}
+\begin{itemize}
+  \ri{BSides South Florida 2026 Speaker: \textit{From Prompt to Pipeline: How Dual-Agent Method Automates Cloud Security Remediation}.}
+  \ri{Patent-Pending AI System: USPTO Provisional \#64/022,497 (Dual-Agent advisory and remediation method).}
+  \ri{Google Cloud security project work and challenge participation; code and tooling references at \href{https://github.com/sarasignedin}{github.com/sarasignedin}.}
+\end{itemize}
 
-\textbf{LSU Shreveport} \hfill {\small 2017 -- 2019} \\
-B.S., Computer and Information Systems Security
-
-\textbf{SUNY Westchester Community College} \hfill {\small 2015 -- 2017} \\
-A.S., Cyber Security
-
-\section*{Certifications}
-CompTIA Security+ ce \\
-Active Secret Clearance (TS investigation in progress) \\
-Patent Pending: USPTO \#64/022,497
-
-\section*{Speaking / Projects}
-\textbf{BSides South Florida (May 2026): From Prompt to Pipeline} \\
-Presented a dual-agent remediation method that transforms natural language security requests into validated workflows for cloud remediation.
-
-\textbf{Pipeline Demos (Open Source)} \\
-Security workflow demonstration project illustrating scanner validation and infrastructure-as-code remediation patterns.
+\section*{Certifications and Education}
+\textbf{Certification:} CompTIA Security+ ce \\
+\textbf{M.S., Cyber Technology} \hfill University of Maryland Global Campus, 2024 \\
+\textbf{B.S., Network Security} \hfill LSU Shreveport, 2019 \\
+\textbf{A.S., Cyber Security} \hfill SUNY Westchester Community College, 2017
 
 \end{document}
